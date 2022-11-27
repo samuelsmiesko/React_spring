@@ -1,0 +1,41 @@
+.Button1{
+    
+    position: absolute;
+    bottom: 50px;
+    right: calc(50% - 100px);
+    height: 120px;
+    width: 200px;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    z-index: 10;
+    overflow: hidden;
+    transition: background-color 0.5s, color 0.5s;
+    display: grid;
+    font-size: 35px; 
+    cursor: pointer;
+    user-select: none;
+    
+}
+
+.Button1:hover {
+    background-color: whitesmoke;
+    color: grey; 
+    
+  }
+
+.Button1:hover > span{
+    animation: spin 0.5s;
+  }
+
+@keyframes spin {
+    0% {
+        
+        transform: translateY(-100%);
+    }
+    
+    100%{
+         
+        transform: translateY(0%);
+    }
+    
+  }
